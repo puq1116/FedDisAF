@@ -1,0 +1,26 @@
+# FedDisAF on the selected PlantVillage class subset.
+base_algorithm: FedAvg
+dataset: PlantVillage
+data_dir: ./data
+backbone: resnet18
+client_num_in_total: 10
+client_num_per_round: 5
+comm_round: 1000
+local_epochs: 1
+batch_size: 32
+lr: 0.001
+momentum: 0.9
+wd: 0.001
+partition_method: hetero
+partition_alpha: 0.25
+dp_noise_scale: 0.15
+proto_loss_weight: 1.0
+feddisaf_proto_temperature: 0.1
+feddisaf_num_heads: 8
+feddisaf_attention_dim: 256
+summary_last_rounds: 5
+pretrained: true
+save_model: true
+seed: 5
+device: auto
+log_dir: ./outputs

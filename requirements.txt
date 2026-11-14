@@ -1,0 +1,7 @@
+# Core versions are taken from the supplied environment export, without CUDA tags.
+torch==2.8.0
+torchvision==0.23.0
+numpy>=1.23,<2
+scikit-learn>=1.1,<2
+Pillow>=9,<12
+PyYAML>=6,<7
