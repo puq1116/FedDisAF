@@ -31,7 +31,7 @@ An optional editable installation, `python -m pip install -e .`, provides the
 
 ## Prepare data
 
-Provide explicit training and validation splits using the same class vocabulary.
+Provide explicit training and test splits using the same class vocabulary.
 `--data-dir` points to the parent of `PlantVillage/` and `ip102_v1.1/`.
 
 ## Run a combination
